@@ -39,6 +39,9 @@ app.get('/api/health', (req, res) => {
 // TODO: EVERYONE CREATE YOUR ROUTES FROM HERE
 app.use("/api/restaurants", restaurantRoutes);
 app.use("/api/cities", cityRoutes);
+app.use("/api/travel-expenses", travelExpenseRoutes)
+ 
+app.use("/api/auth", authRoutes)
 
 
 const placeRoutes = require("./src/routes/Place")
